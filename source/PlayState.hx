@@ -762,7 +762,19 @@ class PlayState extends MusicBeatState
 					stageCurtains.active = false;
 
 					add(stageCurtains);
-			}
+					
+				}	
+		case 'ballisticAlley':
+				{
+						defaultCamZoom = 0.9;
+						curStage = 'BallisticAlley';
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('ballisticAlley/BallisticBackground'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+	
+				}
 		}
 		}
 		//defaults if no gf was found in chart
@@ -830,6 +842,18 @@ class PlayState extends MusicBeatState
 				dad.y += 360;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
 			case 'spirit':
+				dad.x -= 150;
+				dad.y += 100;
+				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+			case 'whitty-crazy':
+				dad.x -= 300;
+				dad.y += 300;
+				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+			case 'tricky':
+				dad.x -= 2;
+				dad.y += 0;
+				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+			case 'hex-glitch':
 				dad.x -= 150;
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);

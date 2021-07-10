@@ -498,6 +498,60 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
+				
+				case 'whitty-crazy':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/WhittyCrazy');
+				frames = tex;
+				animation.addByPrefix('idle', 'Whitty idle dance', 24);
+				animation.addByPrefix('singUP', 'Whitty Sing Note UP', 24);
+				animation.addByPrefix('singRIGHT', 'whitty sing note right', 24);
+				animation.addByPrefix('singDOWN', 'Whitty Sing Note DOWN', 24);
+				animation.addByPrefix('singLEFT', 'Whitty Sing Note LEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 120, 50);
+				addOffset("singRIGHT", 120, 27);
+				addOffset("singLEFT", 120, 10);
+				addOffset("singDOWN", 120, -30);
+
+				playAnim('idle');
+				
+				case 'tricky':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/tricky');
+				frames = tex;
+				animation.addByPrefix('idle', 'Idle', 24);
+				animation.addByPrefix('singUP', 'Sing Up', 24);
+				animation.addByPrefix('singRIGHT', 'Sing Right', 24);
+				animation.addByPrefix('singDOWN', 'Sing Down', 24);
+				animation.addByPrefix('singLEFT', 'Sing Left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 76, 0);
+				addOffset("singRIGHT", 36, -110);
+				addOffset("singLEFT", 134, 0);
+				addOffset("singDOWN", 21, -22);
+
+				playAnim('idle');
+				
+				case 'hex-glitch':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/Hex_Virus');
+				frames = tex;
+				animation.addByPrefix('idle', 'Hex crazy idle', 24);
+				animation.addByPrefix('singUP', 'Hex crazy up', 24);
+				animation.addByPrefix('singRIGHT', 'Hex crazy right', 24);
+				animation.addByPrefix('singDOWN', 'Hex crazy down', 24);
+				animation.addByPrefix('singLEFT', 'Hex crazy left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", 0, 27);
+				addOffset("singLEFT", -10, 10);
+				addOffset("singDOWN", 0, -30);
+
+				playAnim('idle');
 		}
 
 		dance();
